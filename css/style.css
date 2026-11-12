@@ -245,6 +245,8 @@ button:focus {
 
 @media screen and (max-width: 1170px) {
   .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 0.3fr);
     grid-template-areas:
       "bento--nicole bento--title bento--title"
       "bento--nicole bento--1 bento--1"
