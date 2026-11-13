@@ -9,6 +9,19 @@ body {
   margin: 0;
 }
 
+.skip_to_main {
+  position: sticky;
+  top: 1%;
+  left: 1%;
+  text-decoration: none;
+  font-size: smaller;
+  z-index: 1;
+  color: white;
+  padding: 0rem 0.3rem 0rem 0.3rem;
+  background-color: #000;
+  border-radius: 0.2rem;
+}
+
 a:focus,
 button:focus {
   outline: 3px solid #4d6eff;
@@ -30,7 +43,7 @@ button:focus {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   /* grid-template-rows: 0.5fr 1fr 1fr; */
   /* grid-template-areas:
     "bento--nicole bento--title bento--title"
@@ -243,7 +256,7 @@ button:focus {
 }
 
 @media screen and (max-width: 1170px) {
-   .bento--1 {
+  .bento--1 {
     grid-column: span 2;
   }
 
@@ -258,6 +271,7 @@ button:focus {
     grid-column: 1 / -1;
     grid-row: auto;
   }
+
   .bento {
     margin: 0;
   }
@@ -268,15 +282,16 @@ button:focus {
 }
 
 @media screen and (max-width: 560px) {
-   .container {
+  .container {
     grid-template-columns: repeat(1, 1fr);
     padding: 0;
     gap: 0.5rem 0.5rem;
   }
+
   .bento--title {
     grid-column: auto;
   }
- 
+
 
 }
 
